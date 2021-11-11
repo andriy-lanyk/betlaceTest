@@ -4,7 +4,96 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>S3 Innovate</title>
   </head>
-  <body></body>
+  <body>
+    <header>
+        <div class="header__container--mobile">
+                <a class="header__logo" href="./index.html">
+                    <img src="./img/symbol-defs.svg#icon-logo-header" alt="Company logotype">
+                </a>
+                <button
+                type="button"
+                class="header__menu-button "
+                aria-expanded="false"
+                aria-controls="menu-container"
+                data-menu-button
+                >
+                    <svg
+                    width="40"
+                    height="40"
+                    aria-label="Переключатель мобильного меню"
+                    >
+                        <use class="header__icon header__menu-button--burger" href="./images/symbol-defs.svg#icon-menu"></use>
+                        <use class="header__icon header__menu-button--cross" href="./images/symbol-defs.svg#icon-cross"></use>
+                    </svg>
+                </button>
+            </div>
+            <div class="header__menu-container" id="menu-container" data-menu>
+
+                <nav class="header__menu">
+                    <ul class="header__menu-navigation list">
+                        <li class="header__menu-navigation-item">
+                            <a class="header__menu-navigation-link header__menu-navigation-link--current" href="">Студия</a></li>
+                        <li class="header__menu-navigation-item">
+                            <a class="header__menu-navigation-link" href="./portfolio.html">Портфолио</a></li>
+                        <li class="header__menu-navigation-item">
+                            <a class="header__menu-navigation-link" href="">Контакты</a></li>
+                    </ul>
+                </nav>
+
+                <div>
+                    <ul class="header__menu-contacts list">
+                        <li class="header__menu-contacts-item">
+                            <a class="header__menu-contacts-phone" href="tel:+380961111111">
+                                <span >+38 096 111 11 11</span>
+                            </a>
+                        </li>
+                        
+                        <li class="header__menu-contacts-item">
+                            <a class="header__menu-contacts-mail" href="mailto:info@devstudio.com">
+                                <span>info@devstudio.com</span>
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul class="header__menu-social list">
+                        <li class="header__menu-social-item">
+                            <a class="header__menu-social-link" href="#">
+                                <span class="header__menu-social-link--text">Instagram</span>
+                            </a>
+                            <span class="header__menu-social--vertical-line">|</span>
+                        </li>
+                        
+                        <li class="header__menu-social-item">
+                            <a class="header__menu-social-link" href="#">
+                                <span class="header__menu-social-link--text">Twitter</span>
+                            </a>
+                            <span class="header__menu-social--vertical-line">|</span>
+                        </li>
+                        <li class="header__menu-social-item">
+                            <a class="header__menu-social-link" href="#">
+                                <span class="header__menu-social-link--text">Facebook</span>
+                            </a>
+                            <span class="header__menu-social--vertical-line">|</span>
+                        </li>
+                        
+                        <li class="header__menu-social-item">
+                            <a class="header__menu-social-link" href="#">
+                                <span>LinkedIn</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+    </header>
+    <main></main>
+    <footer></footer>
+  </body>
 </html>
