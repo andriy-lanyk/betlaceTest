@@ -11,89 +11,354 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.woff"
+    />
+
     <title>S3 Innovate</title>
   </head>
   <body>
     <header>
-        <div class="header__container--mobile">
-                <a class="header__logo" href="./index.html">
-                    <img src="./img/symbol-defs.svg#icon-logo-header" alt="Company logotype">
-                </a>
-                <button
-                type="button"
-                class="header__menu-button "
-                aria-expanded="false"
-                aria-controls="menu-container"
-                data-menu-button
-                >
-                    <svg
-                    width="40"
-                    height="40"
-                    aria-label="Переключатель мобильного меню"
-                    >
-                        <use class="header__icon header__menu-button--burger" href="./images/symbol-defs.svg#icon-menu"></use>
-                        <use class="header__icon header__menu-button--cross" href="./images/symbol-defs.svg#icon-cross"></use>
-                    </svg>
-                </button>
-            </div>
-            <div class="header__menu-container" id="menu-container" data-menu>
-
-                <nav class="header__menu">
-                    <ul class="header__menu-navigation list">
-                        <li class="header__menu-navigation-item">
-                            <a class="header__menu-navigation-link header__menu-navigation-link--current" href="">Студия</a></li>
-                        <li class="header__menu-navigation-item">
-                            <a class="header__menu-navigation-link" href="./portfolio.html">Портфолио</a></li>
-                        <li class="header__menu-navigation-item">
-                            <a class="header__menu-navigation-link" href="">Контакты</a></li>
-                    </ul>
-                </nav>
-
-                <div>
-                    <ul class="header__menu-contacts list">
-                        <li class="header__menu-contacts-item">
-                            <a class="header__menu-contacts-phone" href="tel:+380961111111">
-                                <span >+38 096 111 11 11</span>
-                            </a>
-                        </li>
-                        
-                        <li class="header__menu-contacts-item">
-                            <a class="header__menu-contacts-mail" href="mailto:info@devstudio.com">
-                                <span>info@devstudio.com</span>
-                            </a>
-                        </li>
-                    </ul>
-    
-                    <ul class="header__menu-social list">
-                        <li class="header__menu-social-item">
-                            <a class="header__menu-social-link" href="#">
-                                <span class="header__menu-social-link--text">Instagram</span>
-                            </a>
-                            <span class="header__menu-social--vertical-line">|</span>
-                        </li>
-                        
-                        <li class="header__menu-social-item">
-                            <a class="header__menu-social-link" href="#">
-                                <span class="header__menu-social-link--text">Twitter</span>
-                            </a>
-                            <span class="header__menu-social--vertical-line">|</span>
-                        </li>
-                        <li class="header__menu-social-item">
-                            <a class="header__menu-social-link" href="#">
-                                <span class="header__menu-social-link--text">Facebook</span>
-                            </a>
-                            <span class="header__menu-social--vertical-line">|</span>
-                        </li>
-                        
-                        <li class="header__menu-social-item">
-                            <a class="header__menu-social-link" href="#">
-                                <span>LinkedIn</span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+      <div class="header__container">
+        <a class="header__logo" href="./index.html">
+          <svg class="header__logo" aria-label="Logotype">
+            <use href="./img/symbol-defs.svg#icon-logo-header"></use>
+          </svg>
+        </a>
+        <button
+          type="button"
+          class="header__menu-button"
+          aria-expanded="false"
+          aria-controls="menu-container"
+          data-menu-button
+        >
+          <svg width="24" height="24" aria-label="Mobile menu switch">
+            <use
+              class="header__icon header__menu-button--burger"
+              href="./img/symbol-defs.svg#icon-burger-menu"
+            ></use>
+            <use
+              class="header__icon header__menu-button--cross"
+              href="./img/symbol-defs.svg#icon-close-menu"
+            ></use>
+          </svg>
+        </button>
+      </div>
+      <div class="header__menu-container" id="menu-container" data-menu>
+        <nav class="header__menu">
+          <ul class="header__menu-navigation-list">
+            <li class="header__menu-navigation-item">
+              <a
+                class="
+                  header__menu-navigation-link
+                  header__menu-navigation-link--current
+                "
+                href=""
+                >Home</a
+              >
+            </li>
+            <li class="header__menu-navigation-item">
+              <a class="header__menu-navigation-link" href="./portfolio.html"
+                >About Us</a
+              >
+            </li>
+            <li class="header__menu-navigation-item">
+              <a class="header__menu-navigation-link" href=""
+                >Services and Expertise</a
+              >
+            </li>
+            <li class="header__menu-navigation-item">
+              <a class="header__menu-navigation-link" href="">Product</a>
+            </li>
+            <li class="header__menu-navigation-item">
+              <a class="header__menu-navigation-link" href=""
+                >Value Proposition</a
+              >
+            </li>
+            <li class="header__menu-navigation-item">
+              <a class="header__menu-navigation-link" href="">Case Study</a>
+            </li>
+            <li class="header__menu-navigation-item">
+              <a class="header__menu-navigation-link" href="">Contact Us</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
-    <main></main>
-    <footer></footer>
+    <main>
+      <div class="hero">
+        <svg class="hero__logo" aria-label="Logotype icon">
+          <use href="./img/symbol-defs.svg#icon-logo-hero"></use>
+        </svg>
+        <svg class="hero__text" aria-label="Logotype text">
+          <use href="./img/symbol-defs.svg#icon-logo-hero-text"></use>
+        </svg>
+      </div>
+
+      <section class="about">
+        <div class="about__title-container">
+          <h1 class="about__title">About S3 Innovate</h1>
+          <p class="about__title-text">About S3 Innovate</p>
+        </div>
+        <article class="about__feature">
+          <h2 class="about__feature-title">
+            We are committed to create a Smart, Secure and Sustainable (S3)
+            world
+          </h2>
+          <p class="about__feature-text">
+            S3 Innovate offers innovative and secure technology solutions to
+            unlock your success in digital transformations. Collaborating with
+            leading technology companies and industry leaders, S3 Innovate is
+            your one-stop solution partner that offers an integrated consultancy
+            and products to reshape your sustainability goals.
+          </p>
+          <ul class="about__feature-list">
+            <li class="about__feature-card">
+              <span class="about__feature-card-quantity">6</span>
+              <p class="about__feature-card-text">
+                Headquarted in Singapore, we have a regional footprint in
+                Manila, Dhaka, Jakarta, Yangon and Ho Chi Minh
+              </p>
+            </li>
+            <li class="about__feature-card">
+              <span class="about__feature-card-quantity">7</span>
+              <p class="about__feature-card-text">
+                We manage a portfolio of assets with clientiale in commerical,
+                retail, manufacturing, energy, data centres,  government
+                agencies, and cities (smart cities, estates, parks)
+              </p>
+            </li>
+            <li class="about__feature-card">
+              <span class="about__feature-card-quantity">100+</span>
+              <p class="about__feature-card-text">
+                We deliver solutions to more than 100+ quality customers around
+                the region
+              </p>
+            </li>
+            <li class="about__feature-card">
+              <span class="about__feature-card-quantity">10m+</span>
+              <p class="about__feature-card-text">
+                IoT data points are collected across all systems and sensors and
+                are designed for performance and scalability in Mircosoft Azure
+              </p>
+            </li>
+          </ul>
+          <p class="about__feature-contact-text">
+            Talk to us about our technology desires. Explore the solutions to
+            help transform your asset and business.
+          </p>
+          <div class="about__logo-container">
+            <svg class="about__logo" aria-label="Logotype">
+              <use href="./img/symbol-defs.svg#icon-logo-about"></use>
+            </svg>
+          </div>
+        </article>
+      </section>
+
+      <section class="slider">
+        <div class="slider__container">
+          <svg class="slider__container-quotes" aria-label="Quotes">
+            <use href="./img/symbol-defs.svg#icon-quotes"></use>
+          </svg>
+          <article class="slider__card fade">
+            <h3 class="slider__card-title">Mr Ang Kian Seng</h3>
+            <p class="slider__card-subtitle">
+              BCA’s Group Director of the <br />
+              Environmental Sustainability Group
+            </p>
+            <svg class="slider__card-line" aria-label="Horizontal line">
+              <use href="./img/symbol-defs.svg#icon-line"></use>
+            </svg>
+            <p class="slider__card-text">
+              “We are glad that S3 Innovate was able to overcome the challenges
+              and meet our expectations in the development of the portal. S3 was
+              able to quickly apply its IT expertise to integrate IOT, energy
+              management and data collection from the buildings’ subsystems
+              together at the same time apply data analytic to make sense of the
+              data stored in the cloud.”
+            </p>
+          </article>
+
+          <article class="slider__card fade">
+            <h3 class="slider__card-title">Mr Ang</h3>
+            <p class="slider__card-subtitle">
+              BCA’s Group Director of the<br />
+              Environmental Sustainability Group
+            </p>
+            <svg width="195" height="2" aria-label="Horizontal line">
+              <use href="./img/symbol-defs.svg#icon-line"></use>
+            </svg>
+            <p class="slider__card-text">
+              “We are glad that S3 Innovate was able to overcome the challenges
+              and meet our expectations in the development of the portal. S3 was
+              able to quickly apply its IT expertise to integrate IOT, energy
+              management and data collection from the buildings’ subsystems
+              together at the same time apply data analytic to make sense of the
+              data stored in the cloud.”
+            </p>
+          </article>
+
+          <article class="slider__card fade">
+            <h3 class="slider__card-title">Mr Kian</h3>
+            <p class="slider__card-subtitle">
+              BCA’s Group Director of the<br />
+              Environmental Sustainability Group
+            </p>
+            <svg width="195" height="2" aria-label="Horizontal line">
+              <use href="./img/symbol-defs.svg#icon-line"></use>
+            </svg>
+            <p class="slider__card-text">
+              “We are glad that S3 Innovate was able to overcome the challenges
+              and meet our expectations in the development of the portal. S3 was
+              able to quickly apply its IT expertise to integrate IOT, energy
+              management and data collection from the buildings’ subsystems
+              together at the same time apply data analytic to make sense of the
+              data stored in the cloud.”
+            </p>
+          </article>
+
+          <article class="slider__card fade">
+            <h3 class="slider__card-title">Mr Seng</h3>
+            <p class="slider__card-subtitle">
+              BCA’s Group Director of the<br />
+              Environmental Sustainability Group
+            </p>
+            <svg width="195" height="2" aria-label="Horizontal line">
+              <use href="./img/symbol-defs.svg#icon-line"></use>
+            </svg>
+            <p class="slider__card-text">
+              “We are glad that S3 Innovate was able to overcome the challenges
+              and meet our expectations in the development of the portal. S3 was
+              able to quickly apply its IT expertise to integrate IOT, energy
+              management and data collection from the buildings’ subsystems
+              together at the same time apply data analytic to make sense of the
+              data stored in the cloud.”
+            </p>
+          </article>
+
+          <article class="slider__card fade">
+            <h3 class="slider__card-title">Mr Kian Seng</h3>
+            <p class="slider__card-subtitle">
+              BCA’s Group Director of the<br />
+              Environmental Sustainability Group
+            </p>
+            <svg width="195" height="2" aria-label="Horizontal line">
+              <use href="./img/symbol-defs.svg#icon-line"></use>
+            </svg>
+            <p class="slider__card-text">
+              “We are glad that S3 Innovate was able to overcome the challenges
+              and meet our expectations in the development of the portal. S3 was
+              able to quickly apply its IT expertise to integrate IOT, energy
+              management and data collection from the buildings’ subsystems
+              together at the same time apply data analytic to make sense of the
+              data stored in the cloud.”
+            </p>
+          </article>
+          <div class="slider__dots">
+            <a class="slider__prev" onclick="plusSlides(-1)">&#10094;</a>
+            <span class="slider__dots--dot" onclick="currentSlide(1)"></span>
+            <span class="slider__dots--dot" onclick="currentSlide(2)"></span>
+            <span class="slider__dots--dot" onclick="currentSlide(3)"></span>
+            <span class="slider__dots--dot" onclick="currentSlide(4)"></span>
+            <span class="slider__dots--dot" onclick="currentSlide(5)"></span>
+            <a class="slider__next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact-section">
+        <div class="contact__title-container">
+          <h1 class="contact__title">contact us</h1>
+          <p class="contact__title-text">contact us</p>
+        </div>
+        <form action="#" class="contact-form">
+          <label class="contact-form__label contact-form__label--marginright">
+            <input type="text" class="contact-form__input" placeholder="Name" />
+            <svg aria-label="Logotype person" class="contact-form__icon">
+              <use href="./img/symbol-defs.svg#icon-form-name"></use>
+            </svg>
+          </label>
+          <label class="contact-form__label">
+            <input
+              type="email"
+              class="contact-form__input"
+              placeholder="Email"
+            />
+            <svg aria-label="Logotype envelop" class="contact-form__icon">
+              <use href="./img/symbol-defs.svg#icon-form-email"></use>
+            </svg>
+          </label>
+          <label class="contact-form__label contact-form__label--marginright">
+            <input
+              type="text"
+              class="contact-form__input"
+              placeholder="Company"
+            />
+            <svg aria-label="Logotype house" class="contact-form__icon">
+              <use href="./img/symbol-defs.svg#icon-form-company"></use>
+            </svg>
+          </label>
+          <label class="contact-form__label">
+            <input type="tel" class="contact-form__input" placeholder="Phone" />
+            <svg aria-label="Logotype phone" class="contact-form__icon">
+              <use href="./img/symbol-defs.svg#icon-form-phone"></use>
+            </svg>
+          </label>
+          <label class="contact-form__label contact-form__label--fullwidth">
+            <input
+              type="text"
+              class="contact-form__input"
+              placeholder="Message"
+            />
+            <svg aria-label="Logotype message" class="contact-form__icon">
+              <use href="./img/symbol-defs.svg#icon-form-message"></use>
+            </svg>
+          </label>
+          <button type="submit" class="contact-form__button">Send</button>
+        </form>
+      </section>
+    </main>
+    <footer class="footer">
+      <svg
+        width="90"
+        height="65"
+        aria-label="Logotype icon"
+        class="footer__logo-icon"
+      >
+        <use href="./img/symbol-defs.svg#icon-logo-footer"></use>
+      </svg>
+      <address class="footer__address">
+        <i class="fa fa-map-marker" aria-hidden="true"></i>
+        18 Sin Ming Lane, #08-37, Midview City, Singapore 573960
+      </address>
+      <a class="footer__email" href="mailto:contact@s3innovate.com"
+        ><i class="fa fa-envelope" aria-hidden="true"></i
+        >contact@s3innovate.com</a
+      >
+      <ul class="footer__social-links-list">
+        <li class="footer__social-links-item">
+          <svg class="footer__social-icons" aria-label="Twitter icon">
+            <use href="./img/symbol-defs.svg#icon-twitter"></use>
+          </svg>
+        </li>
+        <li class="footer__social-links-item">
+          <svg class="footer__social-icons" aria-label="Facebook icon">
+            <use href="./img/symbol-defs.svg#icon-facebook"></use>
+          </svg>
+        </li>
+        <li class="footer__social-links-item">
+          <svg class="footer__social-icons" aria-label="Linkedin icon">
+            <use href="./img/symbol-defs.svg#icon-linkedin"></use>
+          </svg>
+        </li>
+      </ul>
+      <span class="footer__copirite">&copy; All rights reserved</span>
+    </footer>
+
+    <script src="./js/main.js"></script>
   </body>
 </html>
